@@ -40,7 +40,14 @@ const routes = [
   {
     path: '/patterns/creational',
     name: 'PatternsCreational',
-    component: () => import('../views/patterns/creational.vue')
+    component: () => import('../views/patterns/creational/index.vue'),
+    children: [
+      {
+        path: 'singleton',
+        name: 'PatternsCreationalSingleton',
+        component: () => import('../views/patterns/creational/singleton.vue')
+      }
+    ]
   },
   {
     path: '/patterns/structural',
