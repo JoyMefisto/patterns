@@ -1,31 +1,49 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div class="app">
+    <nav class="app__nav">
+      <ul class="app-list">
+        <li><router-link to="/">Главная</router-link></li>
+        <li>
+          <router-link :to="{ name: 'Patterns' }">Паттерны</router-link>
+          <ul>
+            <li>
+              <router-link :to="{ name: 'PatternsCreational' }"
+                >Порождающие паттерны</router-link
+              >
+            </li>
+            <li>
+              <router-link :to="{ name: 'PatternsStructural' }"
+                >Структурные паттерны</router-link
+              >
+            </li>
+            <li>
+              <router-link :to="{ name: 'PatternsBehavioral' }"
+                >Поводенческие паттерны</router-link
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
     <router-view />
   </div>
 </template>
 
 <style lang="scss">
-#app {
+.app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
+  &-list {
+    a {
+      font-weight: bold;
+      color: #2c3e50;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+      &.router-link-exact-active {
+        color: #42b983;
+      }
     }
   }
 }
