@@ -7,6 +7,11 @@
           >Одиночка</router-link
         >
       </li>
+      <li>
+        <router-link :to="{ name: 'PatternsCreationalFactoryMethod' }"
+          >Фабричный метод</router-link
+        >
+      </li>
     </ul>
     <router-view />
   </div>

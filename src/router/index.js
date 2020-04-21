@@ -46,6 +46,12 @@ const routes = [
         path: 'singleton',
         name: 'PatternsCreationalSingleton',
         component: () => import('../views/patterns/creational/singleton.vue')
+      },
+      {
+        path: 'factoryMethod',
+        name: 'PatternsCreationalFactoryMethod',
+        component: () =>
+          import('../views/patterns/creational/factoryMethod.vue')
       }
     ]
   },
