@@ -16,6 +16,22 @@
       (<a href="https://codepen.io/Mefisto">@Mefisto</a>) on
       <a href="https://codepen.io">CodePen</a>.
     </iframe>
+    <h3>Простая фабрика</h3>
+    <iframe
+      height="498"
+      style="width: 100%;"
+      scrolling="no"
+      title="Simple Factory"
+      src="https://codepen.io/Mefisto/embed/XWmReZq?height=498&theme-id=dark&default-tab=js"
+      frameborder="no"
+      allowtransparency="true"
+      allowfullscreen="true"
+    >
+      See the Pen
+      <a href="https://codepen.io/Mefisto/pen/XWmReZq">Simple Factory</a> by Joy
+      (<a href="https://codepen.io/Mefisto">@Mefisto</a>) on
+      <a href="https://codepen.io">CodePen</a>.
+    </iframe>
   </div>
 </template>
 

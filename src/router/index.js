@@ -52,6 +52,22 @@ const routes = [
         name: 'PatternsCreationalFactoryMethod',
         component: () =>
           import('../views/patterns/creational/factoryMethod.vue')
+      },
+      {
+        path: 'prototype',
+        name: 'PatternsCreationalPrototype',
+        component: () => import('../views/patterns/creational/prototype.vue')
+      },
+      {
+        path: 'builder',
+        name: 'PatternsCreationalBuilder',
+        component: () => import('../views/patterns/creational/builder.vue')
+      },
+      {
+        path: 'abstractFactory',
+        name: 'PatternsCreationalAbstractFactory',
+        component: () =>
+          import('../views/patterns/creational/abstractFactory.vue')
       }
     ]
   },
